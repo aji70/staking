@@ -2,7 +2,7 @@ const hre = require("hardhat");
 
 async function main() {
  
-  const MyToken = await ethers.deployContract("MyNFT");
+  const MyToken = await ethers.deployContract("Staking", ["0x4246a99Db07C10fCE03ab238f68E5003AC5264a1", 31536000]);
   await MyToken.waitForDeployment();
 
 
